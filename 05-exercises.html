@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+</head>
+
+<body>
+  <button onclick="
+    console.log(`total cost : ${productCost}$`);
+    ">cost</button>
+  <button onclick="
+    productCost +=5 
+    console.log(`cost : ${productCost}$`);
+  ">cofee</button>
+
+  <button onclick="
+    productCost +=3 ;
+    console.log(`cost : ${productCost}$`);
+  ">bagels</button>
+
+  <button onclick="
+    productCost +=9;
+    console.log(`cost : ${productCost}$`)
+  ">soup</button>
+
+  <button onclick="
+   productCost = 0;
+   console.log('cleared.')
+   console.log(`cost : ${productCost}$`)
+  ">clear</button>
+
+  <button onclick="
+  productCost = productCost + (productCost*0.1);
+  console.log(`total cost with 10% added: ${productCost}$`);
+  ">total cost</button>
+
+  <script>
+   let productCost = 0 ;
+    
+  </script>
+  
+</body>
+</html>
